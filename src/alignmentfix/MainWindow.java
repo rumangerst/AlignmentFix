@@ -52,7 +52,6 @@ public class MainWindow extends javax.swing.JFrame
     AlignmentDocument alignment_document = new AlignmentDocument();
     JTable alignmentTable;    
     
-    String currentblastfile = "";
     String currentalignmentfile = "";
     
     String fileChooserLastDirectory = "";
@@ -327,7 +326,7 @@ public class MainWindow extends javax.swing.JFrame
     
     public void updateTitle()
     {
-        setTitle("AlignmentFixer - " + (currentblastfile.isEmpty() ? "None" : currentblastfile) + " - " + (currentalignmentfile.isEmpty() ? "None" : currentalignmentfile));
+        setTitle("AlignmentFixer - " + (currentalignmentfile.isEmpty() ? "None" : currentalignmentfile));
     }
     
     private List<AlignmentEntry> getSelectedEntries()
