@@ -35,7 +35,7 @@ public class AnnotationDocument
     
     private Annotation getAnnotation(String id)
     {
-        Annotation annot = entries.getOrDefault(id, null);
+        Annotation annot = entries.containsKey(id) ? entries.get(id) : null;
         
         if(annot == null)
         {
