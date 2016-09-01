@@ -175,7 +175,7 @@ def process(input_file, output_file, algnfix_file):
 		f.write("\n" + "\t".join( [ entry[k] for k in mapping ] )) # python yay
 		
 	
-	f.write("\n" + "\n# ".join(log))
+	f.write("\n# " + "\n# ".join(log))
 	
 	f.close()
 
