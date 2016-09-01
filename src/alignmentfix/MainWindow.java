@@ -903,6 +903,7 @@ public class MainWindow extends javax.swing.JFrame
         if(fileChooserDlg.showOpenDialog(this) == JFileChooser.APPROVE_OPTION)
         {
             String filename = fileChooserDlg.getSelectedFile().getAbsolutePath();
+            fileChooserLastDirectory = fileChooserDlg.getCurrentDirectory().getAbsolutePath();
             
             try
             {
