@@ -803,6 +803,7 @@ public class MainWindow extends javax.swing.JFrame
         if(annot_document.isChanged() && JOptionPane.showConfirmDialog(this, "Do you really want clear all changes?", "Clear changes", JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION)
         {
             annot_document.clear();
+            updateAlignment();
         }
     }//GEN-LAST:event_menuClearChangesActionPerformed
 
